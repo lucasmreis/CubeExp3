@@ -1,36 +1,46 @@
 
-.container {
-  width: 200px;
-  height: 260px;
+.wrap {
+  perspective: 800px;
+  perspective-origin: 50px 50px
+}
+
+.cube {
   position: relative;
-  perspective: 800px;   
-}
-
-#card {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  width: 200px;
   transform-style: preserve-3d;
-  transition: transform 1s;
 }
 
-#card figure {
-  display: block;
+.cube div {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+  width: 200px;
+  height: 200px;
 }
 
-#card .front {
-  background: red;  
+.back {
+	transform: translateZ(-100px) rotateY(180deg);
+  background: rgba(255,0,0,0.5);
 }
-
-#card .back {
-  background: green;
-  transform: rotateY(180dg);
+.right {
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+  background: rgba(0,255,0,0.5);
 }
-
-#card.flipped {
-  transform: rotateY(180dg);
+.left {
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+  background: rgba(0,0,255,0.5);
+}
+.top {
+	transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+  background: rgba(255,255,0,0.5);
+}
+.bottom {
+	transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+  background: rgba(255,0,255,0.5);
+}
+.front {
+	transform: translateZ(100px);
+  background: rgba(0,255,255,0.5);
 }
