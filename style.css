@@ -1,15 +1,36 @@
 
 .container {
-  width: 260px;
-  height: 200px;
+  width: 200px;
+  height: 260px;
   position: relative;
-  perspective: 800px;    
+  perspective: 800px;   
 }
 
 #card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+#card figure {
+  display: block;
   position: absolute;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 1s;
+  backface-visibility: hidden;
+}
+
+#card .front {
+  background: red;  
+}
+
+#card .back {
+  background: green;
+  transform: rotateY(180dg);
+}
+
+#card.flipped {
+  transform: rotateY(180dg);
 }
