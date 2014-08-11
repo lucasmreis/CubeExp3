@@ -23,6 +23,13 @@
   background-color: rgba(50, 50, 50, 0.5);
 }
 
+#cube video {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+}
+
 #cube .front  { transform: rotateY(   0deg ) translateZ( 200px ); }
 #cube .back   { transform: rotateY( 180deg ) translateZ( 200px ); }
 #cube .right  { transform: rotateY(  90deg ) translateZ( 200px ); }
