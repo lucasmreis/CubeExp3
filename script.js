@@ -36,6 +36,7 @@
 
 function PlayAllVideos() {
   var videos = document.getElementsByTagName('video');
+  
   for (i = 0; i < videos.length; i++) {
     if (videos[i].paused) {
       videos[i].play();  
@@ -44,3 +45,13 @@ function PlayAllVideos() {
     }
   };
 };
+
+function CheckIfVideosAreLoaded(videos) {
+  for (i = 0; i < videos.length; i++) {
+    if (videos[i].readyState !== 4) {
+      return false;
+    }
+  }
+  return true;
+};
+
