@@ -1,29 +1,46 @@
+(function () {
+  'use strict';
+  
+  var xAngle = 0, yAngle = 0;
+  
+  document.addEventListener('keydown', function(e) {
+    switch(e.keyCode) {
 
+      case 37: // left
+        yAngle -= 90;
+        break;
 
-var xAngle = 0, yAngle = 0;
+      case 38: // up
+        xAngle += 90;
+        break;
 
-document.addEventListener('keydown', function(e) {
-  switch(e.keyCode) {
+      case 39: // right
+        yAngle += 90;
+        break;
 
-    case 37: // left
-      yAngle -= 90;
-      break;
+      case 40: // down
+        xAngle -= 90;
+        break;
+        
+      case 32: // spacebar
+        PlayAllVideos();
+        break;
+    };
 
-    case 38: // up
-      xAngle += 90;
-      break;
+    var cube = document.getElementById('cube');
 
-    case 39: // right
-      yAngle += 90;
-      break;
+    cube.style.transform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
 
-    case 40: // down
-      xAngle -= 90;
-      break;
+  }, false);
+})();
+
+function PlayAllVideos() {
+  var videos = document.getElementsByTagName('video');
+  for (i = 0; i < videos.length; i++) {
+    if (videos[i].paused) {
+      videos[i].play();  
+    } else {
+      videos[i].pause();  
+    }
   };
-  
-  var cube = document.getElementById('cube');
-  
-  cube.style.transform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
-  
-}, false);
+};
