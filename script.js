@@ -39,15 +39,20 @@ function PlayAllVideos() {
   
   for (i = 0; i < videos.length; i++) {
     if (videos[i].paused) {
-      videos[i].play();  
+      //if (AreVideosLoaded()) {
+        videos[i].play(); 
+      //}  
     } else {
       videos[i].pause();  
     }
   };
 };
 
-function CheckIfVideosAreLoaded(videos) {
+function AreVideosLoaded() {
+  var videos = document.getElementsByTagName('video');
+  
   for (i = 0; i < videos.length; i++) {
+    console.log(videos[i].readyState)
     if (videos[i].readyState !== 4) {
       return false;
     }
