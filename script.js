@@ -1,6 +1,7 @@
 
 
 var xAngle = 0, yAngle = 0;
+
 document.addEventListener('keydown', function(e) {
   switch(e.keyCode) {
 
@@ -22,6 +23,7 @@ document.addEventListener('keydown', function(e) {
   };
   
   var cube = document.getElementById('cube');
+  
   cube.style.transform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
   
 }, false);
