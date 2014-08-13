@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lucasmreis/CubeExp3/issues"
   },
-  "homepage": "https://github.com/lucasmreis/CubeExp3"
+  "homepage": "https://github.com/lucasmreis/CubeExp3",
+  "devDependencies": {
+    "karma": "^0.12.21"
+  }
 }
