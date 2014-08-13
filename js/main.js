@@ -59,4 +59,3 @@ function AreVideosLoaded() {
   }
   return true;
 };
-
