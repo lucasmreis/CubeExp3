@@ -10,7 +10,7 @@
   margin: 0 auto;
   height: 400px;
   width: 400px;
-  transition: transform 2s;
+  transition: transform 6s;
   transform-style: preserve-3d;
   transform: translateZ(-100px);
 }
