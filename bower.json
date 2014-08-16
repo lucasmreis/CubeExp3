@@ -1,0 +1,17 @@
+{
+  "name": "CubeExp3",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lucasmreis/CubeExp3",
+  "authors": [
+    "lucasmreis <lucasmreis@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
