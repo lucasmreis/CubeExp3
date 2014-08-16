@@ -17,15 +17,13 @@
 
 #cube div {
   position: absolute;
-  height: 360px;
-  width: 360px;
-  padding: 20px;
+  height: 400px;
+  width: 400px;
   background-color: rgba(50, 50, 50, 0.5);
 }
 
 #cube video {
   position: absolute;
-  top: 50px;
   left: 0;
   width: 100%;
 }
