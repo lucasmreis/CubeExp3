@@ -15,7 +15,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'js/*.js',
+      'bower_components/angular/angular.js',
+      'bower_components/angular-touch/angular-touch.js',
+      'bower_components/lodash/dist/lodash.js',
+      'js/**/*.js',
       'tests/*.js',
       '*.html'
     ],

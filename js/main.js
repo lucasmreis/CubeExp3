@@ -34,19 +34,7 @@
   }, false);
 })();
 
-function PlayAllVideos() {
-  var videos = document.getElementsByTagName('video');
-  
-  for (i = 0; i < videos.length; i++) {
-    if (videos[i].paused) {
-      //if (AreVideosLoaded()) {
-        videos[i].play(); 
-      //}  
-    } else {
-      videos[i].pause();  
-    }
-  };
-};
+
 
 function AreVideosLoaded() {
   var videos = document.getElementsByTagName('video');

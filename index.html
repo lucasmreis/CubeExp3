@@ -8,8 +8,13 @@
 </head>
 <body ng-controller="cubeController">
   
-  <div class="wrap">
-    <div id="cube" class="show-back">
+  <div ng-click=";">{{Transformations()}}</div>
+  <div class="wrap" 
+        ng-click="Left()"
+        
+        ng-swipe-right ="alert('right')">
+    
+    <div id="cube" style={{Transformations()}}>
       <div class="front">
       </div>
       <div class="back">
@@ -31,6 +36,7 @@
   </div>
   
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers/cubeController.js"></script>
 </body>
