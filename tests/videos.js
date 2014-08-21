@@ -13,7 +13,6 @@ describe('testing the videos', function() {
       expect(v).toBeDefined();
       expect(v.paused).toBeDefined();
     });
-    
   });
   
   it('should play and pause all videos', function() {
