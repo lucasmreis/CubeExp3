@@ -13,6 +13,8 @@
     
     $scope.Left  = function () { yAngle -= 90; };
     $scope.Right = function () { yAngle += 90; };
+    $scope.Up    = function () { xAngle += 90; };
+    $scope.Down  = function () { xAngle -= 90; };
   };
   
   cubeController.$inject = ['$scope'];

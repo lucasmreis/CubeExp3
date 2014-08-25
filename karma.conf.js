@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'bower_components/angular-touch/angular-touch.js',
+      'bower_components/angular-swipe/dist/angular-swipe.js',
       'bower_components/lodash/dist/lodash.js',
       'js/**/*.js',
       'tests/*.js',

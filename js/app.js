@@ -1,3 +1,3 @@
 (function () {
-  var app = angular.module('cubeApp', ['ngTouch']);
+  var app = angular.module('cubeApp', ['swipe']);
 }());
