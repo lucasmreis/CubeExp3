@@ -34,5 +34,5 @@ function PlayAllVideos() {
     } else {
       videos[i].pause();  
     }
-  };
-};
+  }
+}

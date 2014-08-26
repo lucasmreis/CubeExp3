@@ -23,9 +23,9 @@
         break;
         
       case 32: // spacebar
-        PlayAllVideos();
+//        PlayAllVideos();
         break;
-    };
+    }
 
     var cube = document.getElementById('cube');
 
@@ -40,10 +40,10 @@ function AreVideosLoaded() {
   var videos = document.getElementsByTagName('video');
   
   for (i = 0; i < videos.length; i++) {
-    console.log(videos[i].readyState)
+    console.log(videos[i].readyState);
     if (videos[i].readyState !== 4) {
       return false;
     }
   }
   return true;
-};
+}
