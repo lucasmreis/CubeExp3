@@ -1,10 +1,8 @@
-
 .wrap {
   margin-top: 20%;
   perspective: 800px;
   perspective-origin: 50% 200px;
 }
-
 #cube {
   position: relative;
   margin: 0 auto;
@@ -14,23 +12,32 @@
   transform-style: preserve-3d;
   transform: translateZ(-100px);
 }
-
 #cube div {
   position: absolute;
   height: 400px;
   width: 400px;
   background-color: rgba(50, 50, 50, 0.5);
 }
-
 #cube video {
   position: absolute;
   left: 0;
   width: 100%;
 }
-
-#cube .front  { transform: rotateY(   0deg ) translateZ( 200px ); }
-#cube .back   { transform: rotateY( 180deg ) translateZ( 200px ); }
-#cube .right  { transform: rotateY(  90deg ) translateZ( 200px ); }
-#cube .left   { transform: rotateY( -90deg ) translateZ( 200px ); }
-#cube .top    { transform: rotateX(  90deg ) translateZ( 200px ); }
-#cube .bottom { transform: rotateX( -90deg ) translateZ( 200px ); }
+#cube .front {
+  transform: rotateY(0deg) translateZ(200px);
+}
+#cube .back {
+  transform: rotateY(180deg) translateZ(200px);
+}
+#cube .right {
+  transform: rotateY(90deg) translateZ(200px);
+}
+#cube .left {
+  transform: rotateY(-90deg) translateZ(200px);
+}
+#cube .top {
+  transform: rotateX(90deg) translateZ(200px);
+}
+#cube .bottom {
+  transform: rotateX(-90deg) translateZ(200px);
+}
