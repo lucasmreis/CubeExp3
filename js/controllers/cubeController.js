@@ -15,12 +15,21 @@
     $scope.Right = function () { yAngle += 90; };
     $scope.Up    = function () { xAngle += 90; };
     $scope.Down  = function () { xAngle -= 90; };
+  
+    var isReady = false;
+    var videoCount = 0;
+    $scope.IncreaseCount = function () {
+      videoCount++;
+      if (videoCount >= 5) isReady = true;
+    }
+    
+    
   };
   
   cubeController.$inject = ['$scope'];
   
   angular.module('cubeApp')
-  .controller('cubeController', cubeController);
+    .controller('cubeController', cubeController);
 }());
 
 function PlayAllVideos() {
