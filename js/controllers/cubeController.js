@@ -22,7 +22,7 @@
     $scope.IncreaseCount = function () {
       videoCount++;
       if (videoCount >= 5) {
-        $scope.$apply(function () { $scope.isReady = true; })
+        $scope.$apply(function () { $scope.isReady = true; });
       }
     };
     
